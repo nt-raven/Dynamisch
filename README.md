@@ -1,7 +1,7 @@
 # My GitHub Project
 
 Django and Postgres
-CRUD operatons project.
+CRUD operatins project.
 create object from html page thrn save this object into database.
 read objects from database and show this on html page.
 from html page update data and again save it in database also show in html page.
