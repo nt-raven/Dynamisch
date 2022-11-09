@@ -32,13 +32,16 @@ def show_page(request):
     all_data = new_model.objects.all()
     a=10
     print(a)
-    return render(request, "new_app/show.html", {'key1': all_data, "key2": a})
+    b = "ALL IS WELL"
+    
+    print(b)
+    return render(request, "new_app/show.html", {'key1': all_data, "key2": a, "key4": b})
 
 def update_page(request, pk):
     #fetching data of perticuler id
     get_data = new_model.objects.get(id=pk)
-    b = "ALL IS WELL"
-    return render(request, "new_app/update.html", {'key3': get_data, 'key4': b})
+    
+    return render(request, "new_app/update.html", {'key3': get_data})
 
 
 #updating data entry from table in update_page     
