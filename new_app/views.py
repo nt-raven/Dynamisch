@@ -37,7 +37,8 @@ def show_page(request):
 def update_page(request, pk):
     #fetching data of perticuler id
     get_data = new_model.objects.get(id=pk)
-    return render(request, "new_app/update.html", {'key3': get_data})
+    b = "ALL IS WELL"
+    return render(request, "new_app/update.html", {'key3': get_data, 'key4': b})
 
 
 #updating data entry from table in update_page     
