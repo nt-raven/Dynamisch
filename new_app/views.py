@@ -30,7 +30,7 @@ def insert_data(request):
 def show_page(request):
     # select* from table
     all_data = new_model.objects.all()
-    a=10
+    a=all_data.__len__()
     print(a)
     b = "ALL IS WELL"
     

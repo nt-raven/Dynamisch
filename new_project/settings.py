@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "new_app"
+    # "new_form"
 ]
 
 MIDDLEWARE = [
@@ -79,6 +80,7 @@ DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
         "NAME": "postgres_test2",
+        # "NAME": "postgre_test4",
         "USER" : "postgres",
         "PASSWORD" : "admin",
         "HOST" : "localhost",
